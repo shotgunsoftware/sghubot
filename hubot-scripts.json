@@ -1,1 +1,15 @@
-["shipit.coffee"]
+[
+    "shipit.coffee", 
+    "hackernews.coffee",
+    "birthday.coffee",
+    "bees.coffee",
+    "cowsay.coffee",
+    "deploy.coffee",
+    "facepalm.coffee",
+    "flip.coffee",
+    "isup.coffee",
+    "ip.coffee",
+    "jenkins.coffee",
+    "chuck-norris.coffee",
+    "go-for-it.coffee"
+]
