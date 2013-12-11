@@ -24,5 +24,7 @@
     "spark.coffee", 
     "meme_captain.coffee",
     "zen.coffee",
-    "animal.coffee"
+    "animal.coffee",
+    "weather.coffee",
+    "ackbar.coffee"
 ]
