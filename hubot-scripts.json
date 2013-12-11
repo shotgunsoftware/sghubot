@@ -23,5 +23,6 @@
     "robot-memes.coffee",
     "spark.coffee", 
     "meme_captain.coffee",
-    "zen.coffee"
+    "zen.coffee",
+    "animal.coffee"
 ]
