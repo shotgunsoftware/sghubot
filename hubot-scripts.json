@@ -23,5 +23,6 @@
     "quickmeme.coffee",
     "robot-memes.coffee",
     "spark.coffee", 
-    "meme_captain.coffee"
+    "meme_captain.coffee",
+    "zen.coffee"
 ]
