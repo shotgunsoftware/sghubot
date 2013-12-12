@@ -1,4 +1,5 @@
 [
+    "redis-brain.coffee",
     "shipit.coffee", 
     "hackernews.coffee",
     "birthday.coffee",
@@ -23,8 +24,12 @@
     "robot-memes.coffee",
     "spark.coffee", 
     "meme_captain.coffee",
-    "zen.coffee",
+    "zendesk.coffee",
     "animal.coffee",
     "weather.coffee",
-    "ackbar.coffee"
+    "ackbar.coffee",
+    "sudo.coffee",
+    "xkcd.coffee",
+    "zombies.coffee",
+    "working-on.coffee"
 ]

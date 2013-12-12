@@ -29,7 +29,8 @@
     "soupselect": "~0.2.0",
     "jsdom": "~0.2.14",
     "underscore": "~1.3.3",
-    "textspark": "0.0.4"
+    "textspark": "0.0.4",
+    "redis": "0.8.4"
   },
   "engines": {
     "node": ">= 0.8.x",
