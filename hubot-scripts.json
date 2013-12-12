@@ -1,4 +1,5 @@
 [
+    "archer.coffee",
     "redis-brain.coffee",
     "shipit.coffee", 
     "hackernews.coffee",
