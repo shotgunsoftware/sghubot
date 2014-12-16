@@ -17,15 +17,15 @@ module.exports = (robot) ->
       msg.send url
 
   robot.respond /(?:mo?u)?sta(?:s|c)he?(?: me)? (.*)/i, (msg) ->
-    type = Math.floor(Math.random() * 3)
+    type = Math.floor(Math.random() * 6)
     mustachify = "http://mustachify.me/#{type}?src="
     imagery = msg.match[1]
 
     if imagery.match /^https?:\/\//i
-      msg.send "#{mustachify}#{imagery}"
+      msg.send "#{mustachify}#{encodeURIComponent imagery}"
     else
       imageMe msg, imagery, false, true, (url) ->
-        msg.send "#{mustachify}#{url}"
+        msg.send "#{mustachify}#{encodeURIComponent url}"
 
 imageMe = (msg, query, animated, faces, cb) ->
   cb = animated if typeof animated == 'function'
@@ -39,6 +39,12 @@ imageMe = (msg, query, animated, faces, cb) ->
       images = JSON.parse(body)
       images = images.responseData?.results
       if images?.length > 0
-        image  = msg.random images
-        cb "#{image.unescapedUrl}#.png"
+        image = msg.random images
+        cb ensureImageExtension image.unescapedUrl
 
+ensureImageExtension = (url) ->
+  ext = url.split('.').pop()
+  if /(png|jpe?g|gif)/i.test(ext)
+    url
+  else
+    "#{url}#.png"
