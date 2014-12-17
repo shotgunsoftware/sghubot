@@ -21,10 +21,10 @@ module.exports = (robot) ->
   if githubIgnoreUsers == undefined
     githubIgnoreUsers = "hubot"
 
-  robot.hear /((\S*|^)?#(\d+)).*/, (msg) ->
+  robot.hear /#(\d+)/, (msg) ->
     return if msg.message.user.name.match(new RegExp(githubIgnoreUsers, "gi"))
     
-    ticket_number = msg.match[3]
+    ticket_number = msg.match[1]
     if isNaN(ticket_number)
       return
     
