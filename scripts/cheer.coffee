@@ -14,14 +14,21 @@
 #   carllerche
 #   nemodreamer (modified)
 
-url = require("url")
+url = require("url") 
 
 module.exports = (robot) ->
+
+  comfort = [
+    "There, there,... Let me cheer you up."
+    "Oh no don't be! I'm there for you..."
+    "That's too bad. Let me change that:"
+  ]
+
   robot.respond /cheer me up/i, (msg) ->
     aww msg
 
-  robot.hear /(i( am|'m)|it( is|'s)).*(sad|depress(ed|ing)|emo|shame)/i, (msg) ->
-    msg.send "There, there,... Let me cheer you up."
+  robot.hear /(i('m| (am|was))|(it|this|that)('s| (is|was))).*(sad|depress(ed|ing)|emo|shame)/i, (msg) ->
+    msg.send msg.random comfort
     aww msg
 
 aww = (msg) ->
