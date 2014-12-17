@@ -10,8 +10,6 @@ Script changes
 --------------
 
 ### hubot-scripts:
-- [ ] "advice.coffee",
-- [ ] Remove "auth". _See below_
+- [x] "advice.coffee"
 
 ### external-scripts:
-- [ ] ["hubot-auth"](https://github.com/hubot-scripts/hubot-auth)
