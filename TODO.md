@@ -11,5 +11,6 @@ Script changes
 
 ### hubot-scripts:
 - [x] "advice.coffee"
+- [x] improve "cheer"
 
 ### external-scripts:
