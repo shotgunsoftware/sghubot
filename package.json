@@ -1,5 +1,5 @@
 {
-  "name": "hosted-hubot",
+  "name": "shotgun-hubot",
   "version": "2.7.1",
   "author": "GitHub Inc.",
   "keywords": [
@@ -8,14 +8,14 @@
     "campfire",
     "bot"
   ],
-  "description": "A simple helpful robot for your Company",
+  "description": "A simple helpful robot for Autodesk Inc. Shotgun",
   "licenses": [{
     "type": "MIT",
     "url": "https://github.com/github/hubot/raw/master/LICENSE"
   }],
   "repository": {
     "type": "git",
-    "url": "https://github.com/github/hubot.git"
+    "url": "https://github.com/shotgunsoftware/sghubot.git"
   },
   "dependencies": {
     "flip": "~0.1.0",
