@@ -11,6 +11,15 @@ Script changes
 
 ### hubot-scripts:
 - [x] "advice.coffee"
-- [x] improve "cheer"
+- [x] Improve "cheer"
+- [x] Update to external version of "auth"
+- [ ] Set up "git-commit-link"
+- [ ] Check jenkins implementation
+- [ ] Set up "harvest"
+- [ ] "hello" and "good-night"
+- [ ] Investigate how to leverage "hipchat-api" script
+- [ ] "illogical" and "invalid"
+- [ ] "reload" (for development)
+- [ ] "sensitive"
 
 ### external-scripts:
