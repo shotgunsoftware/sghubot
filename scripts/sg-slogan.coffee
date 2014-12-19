@@ -17,6 +17,7 @@
 
 module.exports = (robot) ->
   robot.hear /(shotgun)\s?(software|studios?)?/i, (msg) ->
+    msg.send "i heard that"
     getSlogan msg, (titleCase word for word in msg.match[1..]).join ''
 
   getSlogan = (msg, query) ->
