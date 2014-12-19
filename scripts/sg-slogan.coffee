@@ -16,9 +16,15 @@
 #
 
 module.exports = (robot) ->
+
+  quiet_rooms = [
+    'ops'
+    'sgrev_dev'
+  ]
+
   robot.hear /(shotgun)\s?(software|studios?)?/i, (msg) ->
-    msg.send "i heard that"
-    getSlogan msg, (titleCase word for word in msg.match[1..]).join ''
+    if msg.message.room not in quiet_rooms
+      getSlogan msg, (titleCase word for word in msg.match[1..]).join ''
 
   getSlogan = (msg, query) ->
     msg.http("http://www.sloganizer.net/en/outbound.php?slogan=#{query}")

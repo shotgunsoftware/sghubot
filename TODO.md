@@ -21,5 +21,6 @@ Script changes
 - [x] "illogical" and "invalid"
 - [x] "reload" (for development)
 - [x] "sensitive"
+- [ ] combine "hello", "good-night" & polite"
 
 ### external-scripts:

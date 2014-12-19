@@ -13,8 +13,10 @@
 # Author:
 #   nemodreamer
 
+Object::debug = ->
+  "#{key}: #{value}" for key, value of @
+
 module.exports = (robot) ->
 
   robot.respond /debug/i, (msg) ->
-    user = msg.message.user
-    msg.send "Your user ID is #{user.id}"
+    msg.reply "\nmsg.message.user\n", msg.message.user.debug().join "\n"
