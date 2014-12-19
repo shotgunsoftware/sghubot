@@ -20,7 +20,7 @@ module.exports = (robot) ->
     getSlogan msg, (titleCase word for word in msg.match[1..]).join ''
 
   getSlogan = (msg, query) ->
-    msg.http "http://www.sloganizer.net/en/outbound.php?slogan=#{query}"
+    msg.http("http://www.sloganizer.net/en/outbound.php?slogan=#{query}")
       .get() (err, res, body) ->
         msg.send body.replace /<.*?>/g, "" unless err
 
