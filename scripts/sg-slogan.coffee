@@ -20,6 +20,7 @@ module.exports = (robot) ->
   quiet_rooms = [
     'ops'
     'sgrev_dev'
+    'pipeline'
   ]
 
   robot.hear /(shotgun)\s?(software|studios?)?/i, (msg) ->
