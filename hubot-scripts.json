@@ -32,6 +32,7 @@
     "isup.coffee",
     "jenkins.coffee",
     "likeaboss.coffee",
+    "pagerduty.coffee",
     "pomodoro.coffee",
     "quickmeme.coffee",
     "redis-brain.coffee",
