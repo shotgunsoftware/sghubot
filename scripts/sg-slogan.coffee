@@ -17,14 +17,20 @@
 
 module.exports = (robot) ->
 
+  loud_rooms = [
+    'shotgun_software'
+  ]
+
   quiet_rooms = [
+    'er'
     'ops'
-    'sgrev_dev'
     'pipeline'
+    'sgrev_dev'
   ]
 
   robot.hear /(shotgun)\s?(software|studios?)?/i, (msg) ->
-    if msg.message.room not in quiet_rooms
+    room = msg.message.room
+    if room not in quiet_rooms and (room in loud_rooms or not Math.floor(Math.random() * 3))
       getSlogan msg, (titleCase word for word in msg.match[1..]).join ''
 
   getSlogan = (msg, query) ->
