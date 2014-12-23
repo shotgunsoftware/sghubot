@@ -5,16 +5,15 @@
   "keywords": [
     "github",
     "hubot",
-    "campfire",
-    "bot"
+    "hipchat",
+    "bot",
+    "fun"
   ],
   "description": "A simple helpful robot for Autodesk Inc. Shotgun",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/github/hubot/raw/master/LICENSE"
-    }
-  ],
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/github/hubot/raw/master/LICENSE"
+  }],
   "repository": {
     "type": "git",
     "url": "https://github.com/shotgunsoftware/sghubot.git"
@@ -22,14 +21,12 @@
   "dependencies": {
     "flip": "^0.1.1",
     "hubot": "2.7.5",
-    "hubot-auth": "^1.1.2",
     "hubot-cheer": "*",
     "hubot-google-images": "^0.1.2",
     "hubot-google-translate": "^0.1.0",
     "hubot-help": "^0.1.1",
     "hubot-hipchat": "2.7.5",
     "hubot-maps": "0.0.1",
-    "hubot-pager-me": "^2.0.2",
     "hubot-pugme": "^0.1.0",
     "hubot-rules": "^0.1.0",
     "hubot-scripts": "^2.5.16",

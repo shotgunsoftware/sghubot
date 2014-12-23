@@ -3,3 +3,4 @@ node_modules
 *.env
 _*
 .hubot_history
+redis*
