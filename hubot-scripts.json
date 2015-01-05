@@ -33,6 +33,7 @@
   "quickmeme.coffee",
   "redis-brain.coffee",
   "robot-memes.coffee",
+  "room-info.coffee",
   "sensitive.coffee",
   "shipit.coffee",
   "sudo.coffee",
