@@ -27,6 +27,8 @@ module.exports = (robot) ->
     'ops'
     'pipeline'
     'sgrev_dev'
+    'street_team'
+    'review__approval'
   ]
 
   # RegExp FTW!
