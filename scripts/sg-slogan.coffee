@@ -24,11 +24,12 @@ module.exports = (robot) ->
 
   quiet_rooms = [
     'er'
+    'infrastructure'
     'ops'
     'pipeline'
+    'review__approval'
     'sgrev_dev'
     'street_team'
-    'review__approval'
   ]
 
   # RegExp FTW!
