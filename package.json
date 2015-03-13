@@ -1,6 +1,6 @@
 {
   "name": "shotgun-hubot",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "GitHub Inc.",
   "keywords": [
     "github",
@@ -37,7 +37,7 @@
     "hubot-youtube": "^0.1.2"
   },
   "engines": {
-    "node": "0.x.x",
-    "npm": "1.x.x"
+    "node": "1.x.x",
+    "npm": "2.x.x"
   }
 }
