@@ -34,7 +34,7 @@ module.exports = (robot) ->
 
   # RegExp FTW!
   # http://rubular.com/r/y69KsE74yS
-  robot.hear /(shotgun)(?:\s?s(oftware|tudios?))?(?![\w-]*\.(?:com|int))/i, (msg) ->
+  robot.hear /(shotgun)\s?(s(?:oftware|tudios?))?(?![\w-]*\.(?:com|int))/i, (msg) ->
     room = msg.message.room
     if room not in quiet_rooms and (room in loud_rooms or not Math.floor(Math.random() * 10))
       getSlogan msg, (titleCase word for word in msg.match[1..]).join ''
