@@ -22,22 +22,22 @@
   },
   "dependencies": {
     "flip": "^0.1.1",
-    "hubot": "2.7.5",
+    "hubot": "*",
     "hubot-cheer": "*",
-    "hubot-google-images": "^0.1.2",
-    "hubot-google-translate": "^0.1.0",
+    "hubot-google-images": "^0.2.2",
+    "hubot-google-translate": "^0.2.0",
     "hubot-help": "^0.1.1",
-    "hubot-hipchat": "2.7.5",
-    "hubot-maps": "0.0.1",
-    "hubot-meowme": "0.0.1",
-    "hubot-pugme": "^0.1.0",
-    "hubot-rules": "^0.1.0",
-    "hubot-scripts": "^2.5.16",
-    "hubot-tell": "^1.2.3",
-    "hubot-youtube": "^0.1.2"
+    "hubot-hipchat": "*",
+    "hubot-maps": "0.0.2",
+    "hubot-meowme": "*",
+    "hubot-pugme": "*",
+    "hubot-rules": "^0.1.1",
+    "hubot-scripts": "^2.16.2",
+    "hubot-tell": "^1.2.4",
+    "hubot-youtube": "^1.0.1"
   },
   "engines": {
-    "node": "0.10.35",
-    "npm": "2.5.1"
+    "node": "4.0.0",
+    "npm": "2.14.0"
   }
 }
