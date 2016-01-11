@@ -13,7 +13,7 @@
 module.exports = (robot) ->
 
   robot.hear /\bchanges\b/i, (msg) ->
-    if not Math.floor(Math.random() * 10)
+    unless Math.floor(Math.random() * 10)
 
       base = 'http://payload342.cargocollective.com/1/16/514318/9158551/'
 
